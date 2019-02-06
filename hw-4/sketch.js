@@ -1,11 +1,11 @@
 function setup() {
     // create a canvas to draw my monster on
-    createCanvas( 600, 900 );
+    createCanvas( 600, 600 );
 }
 
 function draw() {
     // set the background color
-    background( 'rgb(78, 249, 135)' );
+    background( 'rgb(78, 40, 125)' );
 
     // *****************************************************
     // create a sandbox for the entire monster
@@ -15,12 +15,12 @@ function draw() {
     translate( 300, 450 );
 
 
-    // ** BODY **********************************
+    // ** LEGS **********************************
     push();
-    // body code goes here
+    // leg code goes here
 
     pop();
-    // **END BODY**
+    // **END LEGS**
 
 
     // ** ARMS **********************************
@@ -36,7 +36,7 @@ function draw() {
 
     // head code goes here
     // make skull first
-
+      ellipse( 0, 0, 10, 10)
 
     // **MOUTH**
     push();
