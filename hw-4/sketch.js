@@ -1,6 +1,6 @@
 function setup() {
     // create a canvas to draw my monster on
-    createCanvas( 600, 600 );
+    createCanvas(600, 600);
 }
 
 function draw() {
@@ -12,7 +12,7 @@ function draw() {
     push();
 
     // move the entire grid for this monster to the center of the canvas
-    translate( 300, 450 );
+    translate(300, 300);
 
 
     // ** LEGS **********************************
@@ -36,7 +36,9 @@ function draw() {
 
     // head code goes here
     // make skull first
-      ellipse( 0, 0, 10, 10)
+      translate(0, 100)
+      fill('rgb(85, 208, 76)')
+      ellipse(0, 0, 100, 100)
 
     // **MOUTH**
     push();
