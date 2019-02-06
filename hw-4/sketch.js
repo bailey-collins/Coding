@@ -38,7 +38,7 @@ function draw() {
     // make skull first
       translate(0, 100)
       fill('rgb(85, 208, 76)')
-      ellipse(0, 100, 250, 250)
+      ellipse(0, -200, 400, 400)
 
     // **MOUTH**
     push();
