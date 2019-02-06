@@ -51,11 +51,11 @@ function draw() {
     push();
     // eye code goes here
       fill('rgb(235, 250, 235)')
-      ellipse(0, -190, 130, 140)
+      ellipse(0, -200, 130, 140)
       fill('rgb(21, 146, 96)')
-      ellipse(0, -190, 80, 80)
+      ellipse(0, -200, 80, 80)
       fill('rgb(7, 7, 7)')
-      ellipse(0, -190, 50, 50)
+      ellipse(0, -200, 50, 50)
     pop();
     // **END EYES**
 
