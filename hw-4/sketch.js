@@ -44,7 +44,7 @@ function draw() {
     push();
     // mouth code goes here
       fill('rgb(33, 82, 29)');
-      arc(300, 200, 300, 300, radians(280), radians(280));
+      arc(-100, 200, -100, 200, radians(280), radians(280));
     pop();
     // **END MOUTH**
 
