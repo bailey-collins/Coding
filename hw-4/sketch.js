@@ -47,26 +47,18 @@ function draw() {
     pop();
     // **END MOUTH**
 
-    // **EYES**
+    // **EYE**
     push();
     // eye code goes here
-    // left
-      translate()
+      translate(0, 100)
       fill('rgb(235, 250, 235)')
-      ellipse()
-      translate()
+      ellipse(0, -100, 90, 90)
+      translate(0, 100)
       fill('rgb(21, 146, 96)')
-      ellipse()
-      translate()
+      ellipse(0, -100, 60, 60)
+      translate(0, 100)
       fill('rgb(7, 7, 7)')
-      ellipse()
-    pop();
-
-    push();
-    // eye code goes here
-    // right
-      fill('rgb(235, 250, 235)')
-      ellipse()
+      ellipse(0, -100, 30, 30)
     pop();
     // **END EYES**
 
