@@ -28,7 +28,7 @@ function draw() {
     // arms code goes here
     //left
     fill('rgb(85, 208, 76)');
-    ellipse(100, 0, 50, 150);
+    ellipse(-100, 0, 50, 150);
 
     pop();
     // **END ARMS**
