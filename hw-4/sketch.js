@@ -45,7 +45,7 @@ function draw() {
     // mouth code goes here
       noStroke();
       fill('rgb(33, 82, 29)');
-      ellipse(0, -50, 200, 90)
+      ellipse(0, -50, 200, 90);
     pop();
     // **END MOUTH**
 
