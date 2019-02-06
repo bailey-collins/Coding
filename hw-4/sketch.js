@@ -45,15 +45,7 @@ function draw() {
     // mouth code goes here
       noStroke();
       fill('rgb(33, 82, 29)');
-      arc(
-        -100,
-        200,
-        -100,
-        200,
-        radians(280),
-        radians(280)
-        PIE
-      );
+      ellipse(0, -50, 200, 90)
     pop();
     // **END MOUTH**
 
