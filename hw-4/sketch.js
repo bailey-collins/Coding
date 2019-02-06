@@ -36,26 +36,27 @@ function draw() {
 
     // head code goes here
     // make skull first
-      translate(0, 100)
-      fill('rgb(85, 208, 76)')
-      ellipse(0, -150, 330, 370)
+      translate(0, 100);
+      fill('rgb(85, 208, 76)');
+      ellipse(0, -150, 330, 370);
 
     // **MOUTH**
     push();
     // mouth code goes here
-
+      fill('rgb(33, 82, 29)');
+      arc(300, 200, 300, 300, radians(280), radians(280));
     pop();
     // **END MOUTH**
 
     // **EYE**
     push();
     // eye code goes here
-      fill('rgb(235, 250, 235)')
-      ellipse(0, -200, 130, 140)
-      fill('rgb(21, 146, 96)')
-      ellipse(0, -200, 80, 80)
-      fill('rgb(7, 7, 7)')
-      ellipse(0, -200, 50, 50)
+      fill('rgb(235, 250, 235)');
+      ellipse(0, -200, 130, 160);
+      fill('rgb(21, 146, 96)');
+      ellipse(0, -200, 80, 90);
+      fill('rgb(7, 7, 7)');
+      ellipse(0, -200, 50, 60);
     pop();
     // **END EYES**
 
