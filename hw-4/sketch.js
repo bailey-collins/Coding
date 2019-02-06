@@ -43,8 +43,17 @@ function draw() {
     // **MOUTH**
     push();
     // mouth code goes here
+      noStroke();
       fill('rgb(33, 82, 29)');
-      arc(-100, 200, -100, 200, radians(280), radians(280));
+      arc(
+        -100,
+        200,
+        -100,
+        200,
+        radians(280),
+        radians(280)
+        PIE
+      );
     pop();
     // **END MOUTH**
 
