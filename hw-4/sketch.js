@@ -50,15 +50,12 @@ function draw() {
     // **EYE**
     push();
     // eye code goes here
-    //  translate(0, 100)
       fill('rgb(235, 250, 235)')
-      ellipse(0, -100, 100, 100)
-  //    translate(0, 100)
+      ellipse(0, 10, 120, 120)
       fill('rgb(21, 146, 96)')
-      ellipse(0, -100, 70, 70)
-//      translate(0, 100)
+      ellipse(0, 10, 80, 80)
       fill('rgb(7, 7, 7)')
-      ellipse(0, -100, 40, 40)
+      ellipse(0, 10, 50, 50)
     pop();
     // **END EYES**
 
