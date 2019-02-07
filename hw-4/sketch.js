@@ -36,7 +36,7 @@ function draw() {
     ellipse(-150, -10, 50, 300);
     //right
     fill('rgb(85, 208, 76)');
-    ellipse(150, 10, 50, 300);
+    ellipse(150, -10, 50, 300);
     pop();
     // **END ARMS**
 
