@@ -49,7 +49,7 @@ function draw() {
       triangle(-50, -270, -100, -200, -40, -200);
       //right
       fill('rgb(195, 222, 122)');
-      triangle()
+      triangle(50, -270, 100, -200, 40, -200)
     pop();
     // **END HORNS**
 
