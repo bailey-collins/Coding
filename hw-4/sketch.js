@@ -46,7 +46,7 @@ function draw() {
       //horn code goes here
       //left
       fill('rgb(195, 222, 122)');
-      triangle(10, -250, 10, -150, 15, -200);
+      triangle(20, -250, 20, -150, 10, -200);
       //right
       fill('rgb(195, 222, 122)');
       triangle()
@@ -77,8 +77,10 @@ function draw() {
     // eye code goes here
       fill('rgb(235, 250, 235)');
       ellipse(0, -200, 130, 160);
+      noStroke();
       fill('rgb(21, 146, 96)');
       ellipse(0, -200, 80, 90);
+      noStroke();
       fill('rgb(7, 7, 7)');
       ellipse(0, -200, 50, 60);
     pop();
