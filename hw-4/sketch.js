@@ -46,7 +46,7 @@ function draw() {
       //horn code goes here
       //left
       fill('rgb(195, 222, 122)');
-      triangle(20, -300, 20, -200, 10, -250);
+      triangle(50, -250, 50, -150, 40, -200);
       //right
       fill('rgb(195, 222, 122)');
       triangle()
