@@ -33,10 +33,10 @@ function draw() {
     // arms code goes here
     //left
     fill('rgb(85, 208, 76)');
-    //ellipse(0, -150, 50, 150);
+    ellipse(-150, 0, 50, 150);
     //right
     fill('rgb(85, 208, 76)');
-    ellipse(-150, 0, 50, 150);
+    ellipse(150, 0, 50, 150);
     pop();
     // **END ARMS**
 
