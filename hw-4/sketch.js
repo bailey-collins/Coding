@@ -20,10 +20,10 @@ function draw() {
     // leg code goes here
     //left
     fill('rgb(85, 208, 76)');
-    ellipse(-50, 300, 50, 150);
+    ellipse(-50, 200, 50, 200);
     //right
     fill('rgb(85, 208, 76)');
-    ellipse(50, 300, 50, 150);
+    ellipse(50, 200, 50, 200);
     pop();
     // **END LEGS**
 
