@@ -36,7 +36,7 @@ function draw() {
     //ellipse(0, -150, 50, 150);
     //right
     fill('rgb(85, 208, 76)');
-    //ellipse(-150, 0, 50, 150);
+    ellipse(-150, 0, 50, 150);
     pop();
     // **END ARMS**
 
@@ -46,7 +46,7 @@ function draw() {
       //horn code goes here
       //left
       fill('rgb(195, 222, 122)');
-      triangle(100, 100, 50, 50, -50, -50);
+      triangle(10, -100, 20, -150, 50, -200);
     pop();
     // **END HORNS**
 
