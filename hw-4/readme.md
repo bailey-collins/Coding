@@ -6,4 +6,5 @@ Most of my issues occurred with placement. I had a hard time imagining the grid 
 
 My problems weren't really the type that could be solved by the issue board, so I didn't have cause to use it this time, but I kept an eye on it in case anything popped up that I knew a solution for.
 
-![Here's my reference picture for the project.](image1.jpg)
+Here's my reference picture for the project.
+![Reference Picture](image1.jpg)
