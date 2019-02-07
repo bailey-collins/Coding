@@ -20,10 +20,10 @@ function draw() {
     // leg code goes here
     //left
     fill('rgb(85, 208, 76)');
-    //ellipse(-50, 10, 50, 150);
+    ellipse(-50, 10, 50, 150);
     //right
     fill('rgb(85, 208, 76)');
-    //ellipse(50, 10, 50, 150);
+    ellipse(50, 10, 50, 150);
     pop();
     // **END LEGS**
 
@@ -33,12 +33,22 @@ function draw() {
     // arms code goes here
     //left
     fill('rgb(85, 208, 76)');
-    ellipse(0, -150, 50, 150);
+    //ellipse(0, -150, 50, 150);
     //right
     fill('rgb(85, 208, 76)');
-    ellipse(-150, 0, 50, 150);
+    //ellipse(-150, 0, 50, 150);
     pop();
     // **END ARMS**
+
+
+    // ** HORNS **********************************
+    push();
+      //horn code goes here
+      //left
+      fill('rgb(195, 222, 122)');
+      triangle(100, 100, 50, 50, -50, -50);
+    pop();
+    // **END HORNS**
 
 
     // ** HEAD **********************************
