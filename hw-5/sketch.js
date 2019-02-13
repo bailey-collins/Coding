@@ -18,6 +18,9 @@ function draw() {
 //creating a sandbox for squares- I'm looking to make some squares which rotate into diamonds in progressively lighter shades of blue
 push();
 
+//move entire grid to center
+translate(300, 300);
+
   //first large square
   push();
     fill('rgb( 51, 153, 255)');
