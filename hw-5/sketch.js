@@ -23,6 +23,7 @@ push();
 
   //first large square
   push();
+    rotate( radians(squareRotations));
     fill('rgb( 51, 153, 255)');
     square(0, 0, sideOne);
     squareRotations = (mouseY * 0.1) - 20;
@@ -30,6 +31,7 @@ push();
 
   //second medium square
   push();
+    rotate( radians(squareRotations));
     fill('rgb( 102, 178, 255)');
     square(0, 0, sideOne*0.5);
     squareRotations = (mouseY * 0.2) - 20;
@@ -37,6 +39,7 @@ push();
 
   //final small square
   push();
+    rotate( radians(squareRotations));
     fill('rgb( 153, 204, 255)');
     square(0, 0, sideOne*0.25);
     squareRotations = (mouseY * 0.3) - 20;
