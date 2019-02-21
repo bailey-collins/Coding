@@ -2,10 +2,10 @@
 let bgColor; // background-color
 let centerX, centerY;
 let circles = {};
-circles.pos1x = 100;
-circles.pos1y = 100;
-circles.pos2x = 200;
-circles.pos2y = 200;
+circles.pos1x = 50;
+circles.pos1y = 50;
+circles.pos2x = 100;
+circles.pos2y = 100;
 circles.pos3x = 0;
 circles.pos3y = 0;
 let multMax = 0.01;
