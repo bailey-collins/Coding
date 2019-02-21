@@ -51,7 +51,7 @@ function draw() {
       noStroke();
       // stroke(200, 20);
       // get a random noise value between (0-1)
-      alphaNoise = noise(0.1 * frameCount + 1000);
+      alphaNoise = noise(0.1 * frameCount + 2000);
       alphaNoise = map(alphaNoise, 0, 1, -2, 2);
       alphaAmt += alphaNoise;
       alphaAmt = constrain(alphaAmt, 20, 100);
