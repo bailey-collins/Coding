@@ -57,7 +57,7 @@ function draw() {
       alphaAmt = constrain(alphaAmt, 20, 100);
       fill(redFill, 255 - redFill, 175, 30);
 
-      triangle(circles.pos1x, circles.pos1y, circles.pos2x, circles.pos2y, circles.pos3x, circles.pos3y);
+      circle(circles.pos1x, circles.pos1y, circles.pos2x, circles.pos2y, circles.pos3x, circles.pos3y);
 
       circles.pos1x = circles.pos2x;
       circles.pos1y = circles.pos2y;
