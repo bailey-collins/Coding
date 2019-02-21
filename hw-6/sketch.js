@@ -17,7 +17,7 @@ let alphaNoise;
 
 
 function setup() {
-    bgColor = color(50, 100, 200);
+    bgColor = color(50, 50, 50);
     // createCanvas(windowWidth, windowHeight);
     createCanvas(windowWidth, 800);
     background(bgColor);
