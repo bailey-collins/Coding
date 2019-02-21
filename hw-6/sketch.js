@@ -1,13 +1,13 @@
 // DEFINE GLOBAL VARIABLES
 let bgColor; // background-color
 let centerX, centerY;
-let smoke = {};
-smoke.pos1x = 100;
-smoke.pos1y = 100;
-smoke.pos2x = 200;
-smoke.pos2y = 200;
-smoke.pos3x = 0;
-smoke.pos3y = 0;
+let circles = {};
+circles.pos1x = 100;
+circles.pos1y = 100;
+circles.pos2x = 200;
+circles.pos2y = 200;
+circles.pos3x = 0;
+circles.pos3y = 0;
 let multMax = 0.01;
 let multDelta;
 let mult;
@@ -24,10 +24,10 @@ function setup() {
     // frameRate(20);
 
     // Set initial position
-    smoke.pos1x = random(width);
-    smoke.pos1y = random(height);
-    smoke.pos2x = smoke.pos1x + 2;
-    smoke.pos2y = smoke.pos1y - 2;
+    circles.pos1x = random(width);
+    circles.pos1y = random(height);
+    circles.pos2x = circles.pos1x + 2;
+    circles.pos2y = circles.pos1y - 2;
 }
 
 
@@ -40,9 +40,9 @@ function draw() {
       multDelta = map(multDelta, 0, 1, -0.0001, 0.0001);
       multMax = constrain(multMax + multDelta, 0.005, 0.2);
       mult = random(-multMax, multMax);
-      smoke.pos3x = abs(((width * mult) + smoke.pos2x) % width);
+      circles.pos3x = abs(((width * mult) + circles.pos2x) % width);
       mult = random(-multMax, multMax);
-      smoke.pos3y = abs(((height * mult) + smoke.pos2y) % height);
+      circles.pos3y = abs(((height * mult) + circles.pos2y) % height);
 
 
       mult = noise(frameCount * 0.001) * 255;
@@ -57,12 +57,12 @@ function draw() {
       alphaAmt = constrain(alphaAmt, 20, 100);
       fill(redFill, 255 - redFill, 175, 30);
 
-      triangle(smoke.pos1x, smoke.pos1y, smoke.pos2x, smoke.pos2y, smoke.pos3x, smoke.pos3y);
+      triangle(circles.pos1x, circles.pos1y, circles.pos2x, circles.pos2y, circles.pos3x, circles.pos3y);
 
-      smoke.pos1x = smoke.pos2x;
-      smoke.pos1y = smoke.pos2y;
-      smoke.pos2x = smoke.pos3x;
-      smoke.pos2y = smoke.pos3y;
+      circles.pos1x = circles.pos2x;
+      circles.pos1y = circles.pos2y;
+      circles.pos2x = circles.pos3x;
+      circles.pos2y = circles.pos3y;
 
 //////// DEBUGGING STUFF /////////////
 // ellipse(centerX, centerY, 40, 40);
