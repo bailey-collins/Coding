@@ -1,4 +1,4 @@
-Your Name, Your Section Number
+Bailey Collins, Section 50
 
 [Live Sketch Link](Your Live Link)
 
@@ -16,14 +16,14 @@ ball.delta_y = 1;
 ball.scale_x = 1;
 ball.scale_y = 1;
 ```
-
+This is setting values to reference in the code later.
 
 ```function setup() {
     createCanvas(windowWidth, 400);
     background(255);
 }
 ```
-
+This sets the size and background color of the canvas, or area of screen where the animation occurs.
 
 ```function draw() {
 
