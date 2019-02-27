@@ -29,30 +29,28 @@ This sets the size and background color of the canvas, or area of screen where t
 
     ball.x += ball.delta_x * ball.scale_x;
     ball.y += ball.delta_y * ball.scale_y;
-```
 
-
-```if (ball.x >= width || ball.x <= 0) {
+if (ball.x >= width || ball.x <= 0) {
     ball.delta_x = -1 * ball.delta_x;
 }
 if (ball.y >= height || ball.y <= 0) {
     ball.delta_y = -1 * ball.delta_y;
 }
 ```
-
+This is setting the movement pattern of the ellipses so that they *bounce* on the edges of the canvas and move back and forth.
 
 ```fill(255);
 ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 ```
-
+This sets the color of the ellipses to white and also sets their size.
 
 ```function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 }
 ```
-
+This makes it so that the ellipses speed up and slightly change trajectory when the mouse is clicked within the canvas. 
 
 
 <!--
