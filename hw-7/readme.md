@@ -50,7 +50,7 @@ This sets the color of the ellipses to white and also sets their size.
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 }
 ```
-This makes it so that the ellipses speed up and slightly change trajectory when the mouse is clicked within the canvas. 
+This makes it so that the ellipses speed up and slightly change trajectory when the mouse is clicked. 
 
 
 <!--
