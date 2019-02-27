@@ -29,7 +29,7 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    fill(255);
+    fill(rgb'178, 102, 255');
     ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 
