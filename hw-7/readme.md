@@ -6,6 +6,16 @@ Bailey Collins, Section 50
 # HW 7 | Describe then Alter the Bouncing Ball
 
 ## Description of What the Original Code is Doing
+<!--
+--This is a Comment Block--
+
+Please describe what the original code is doing.
+
+Why is it working the way it is?
+What does each line do?
+How can you make the ball change direction?
+
+-->
 
 ```let ball = {};
 ball.width = 40;
@@ -50,23 +60,12 @@ This sets the color of the ellipses to white and also sets their size.
     ball.scale_y = map(mouseY, 0, height, 0.5, 10);
 }
 ```
-This makes it so that the ellipses speed up and slightly change trajectory when the mouse is clicked. 
-
-
-<!--
---This is a Comment Block--
-
-Please describe what the original code is doing.
-
-Why is it working the way it is?
-What does each line do?
-How can you make the ball change direction?
-
--->
+This makes it so that the ellipses speed up and slightly change trajectory when the mouse is clicked.
 
 
 ## How did you alter the sketch?
-
 <!--
 Please describe how and why you changed the sketch?
 -->
+
+I tried to change the color of the ellipse to a random color whenever any key on the keyboard is pressed. I thought it would look cool for the circle to be a different color, especially after the mouse click spaced the circles out more. I kept getting grays, but I thought they looked pretty cool anyway. I chose a keyboard trigger so that it wouldn't conflict with the mouse click.  
