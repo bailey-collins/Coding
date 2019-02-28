@@ -31,7 +31,8 @@ function draw() {
 
     if (keyIsPressed) {
       fill(random(255));
-      ellipse(ball.x, ball.y, ball.width, ball.width);
+      ellipse(ball.x, ball.y, ball.width, ball.width
+        );
     } else {
       fill(70);
       ellipse(ball.x, ball.y, ball.width, ball.width);
