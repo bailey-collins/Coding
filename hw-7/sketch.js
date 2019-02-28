@@ -29,8 +29,12 @@ function draw() {
         ball.delta_y = -1 * ball.delta_y;
     }
 
-    fill(200);
-    ellipse(ball.x, ball.y, ball.width, ball.width);
+    if (keyIsPressed) {
+      fill(random(255));
+      ellipse(ball.x, ball.y, ball.width, ball.width);
+    } else {
+      fill(70);
+      ellipse(ball.x, ball.y, ball.width, ball.width);
 }
 
 function mousePressed() {
