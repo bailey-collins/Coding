@@ -1,6 +1,6 @@
 Bailey Collins, Section 50
 
-[Live Sketch Link](Your Live Link)
+[Live Sketch Link](https://bailey-collins.github.io/Coding/hw-7/)
 
 
 # HW 7 | Describe then Alter the Bouncing Ball
