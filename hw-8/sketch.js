@@ -14,6 +14,18 @@ function setup() {
 
 function draw() {
     // set the background color
-    background( 'rgb(78, 40, 125)' );
-  }
+    background( 'blue' );
+
+    noStroke();
+
+    //set a dummy value for x and y
+    Let x = 1;
+    Let y = 1;
+    while ( x != 0 ){
+      x = floor(random() * rows);
+      y = floor(random() * cols);
+
+      fill( random(50,100), random(175,255), random(125,80));
+      triangle(288, 18, 351, 360, 288, 360);
+    }
 }
