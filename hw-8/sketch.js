@@ -25,7 +25,11 @@ function draw() {
       x = floor(random() * rows);
       y = floor(random() * cols);
 
-      fill( random(50,100), random(175,255), random(125,80));
-      triangle(288, 18, 351, 360, 288, 360);
+        for (Let y_space > 40;) {
+
+          fill( random(50,100), random(175,255), random(125,80));
+          triangle(288, 18, 351, 360, 288, 360);
+
+        }
     }
 }
