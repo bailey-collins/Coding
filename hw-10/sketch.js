@@ -12,9 +12,6 @@ function setup(){
       {
         period: { x: random(60, 240), y: random(60, 240) },
         maxSize: random(4),
-        maxDist: {
-          x: random(width/2),
-          y: random(height/2)
         },
         pos: {
           x: random(width),
