@@ -43,6 +43,6 @@ class Tri {
   }
 
   //spin() {
-    //this.posX 
-  }
+    //this.posX
+  //}
 }
