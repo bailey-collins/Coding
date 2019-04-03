@@ -20,8 +20,7 @@ function draw() {
 //TRIANGLE CLASS DEFINITION
 class Tri {
   constructor(x, y, size, color) {
-    this.color = rgb('66, 244, 167');
-    this.spinColor = rgb('33, 119, 82')
+    this.color = color;
     this.pointOneX = 3;
     this.pointOneY = 3;
     this.pointTwoX = x / 2;
