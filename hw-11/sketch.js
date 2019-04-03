@@ -21,8 +21,8 @@ function draw() {
 class Tri {
   constructor(x, y, size, color) {
     this.color = color;
-    this.pointOneX = x
-    this.pointOneY = y
+    this.pointOneX = 3
+    this.pointOneY = 3
     this.pointTwoX = x / 2
     this.pointTwoY = y / 2
     this.pointThreeX = x / .5
@@ -40,5 +40,9 @@ class Tri {
     translate(this.posX, this.posY)
     triangle(this.pointOneX, this.pointOneY, this.pointTwoX, this.pointTwoY, this.pointThreeX, this.pointThreeY);
     pop();
+  }
+
+  //spin() {
+    //this.posX 
   }
 }
