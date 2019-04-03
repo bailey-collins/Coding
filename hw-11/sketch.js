@@ -20,13 +20,14 @@ function draw() {
 //TRIANGLE CLASS DEFINITION
 class Tri {
   constructor(x, y, size, color) {
-    this.color = color;
-    this.pointOneX = 3
-    this.pointOneY = 3
-    this.pointTwoX = x / 2
-    this.pointTwoY = y / 2
-    this.pointThreeX = x / .5
-    this.pointThreeY = y / .5
+    this.color = rgb('66, 244, 167');
+    this.spinColor = rgb('33, 119, 82')
+    this.pointOneX = 3;
+    this.pointOneY = 3;
+    this.pointTwoX = x / 2;
+    this.pointTwoY = y / 2;
+    this.pointThreeX = x / .5;
+    this.pointThreeY = y / .5;
     this.posX = x;
     this.posY = y;
   }
@@ -35,9 +36,9 @@ class Tri {
     //remove outer stroke
     noStroke();
     //set fill color
-    fill(this.color)
+    fill(this.color);
     //set the position of the triangles
-    translate(this.posX, this.posY)
+    translate(this.posX, this.posY);
     triangle(this.pointOneX, this.pointOneY, this.pointTwoX, this.pointTwoY, this.pointThreeX, this.pointThreeY);
     pop();
   }
