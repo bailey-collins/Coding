@@ -21,7 +21,12 @@ function draw() {
 class Tri {
   constructor(x, y, size, color) {
     this.color = color;
-    this.size = size;
+    this.pointOneX = x
+    this.pointOneY = y
+    this.pointTwoX = x / 2
+    this.pointTwoY = y / 2
+    this.pointThreeX = x / .5
+    this.pointThreeY = y / .5
     this.posX = x;
     this.posY = y;
   }
@@ -32,7 +37,8 @@ class Tri {
     //set fill color
     fill(this.color)
     //set the position of the triangles
-
+    translate(this.posX, this.posY)
+    triangle(this.pointOneX, this.pointOneY, this.pointTwoX, this.pointTwoY, this.pointThreeX, this.pointThreeY);
     pop();
   }
 }
