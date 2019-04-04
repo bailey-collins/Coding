@@ -30,6 +30,7 @@ class Tri {
     this.posX = x;
     this.posY = y;
   }
+
   display() {
     push();
     //remove outer stroke
@@ -42,7 +43,12 @@ class Tri {
     pop();
   }
 
-  //spin() {
-    //this.posX
-  //}
+  spin() {
+    push();
+    noStroke();
+    fill(this.color);
+    translate(this.posX, this.posY);
+    //set the rotated points to oposite sides to create the illusion of "spinning"
+    triangle(this.pointThreeX, this.pointThreeY, this.pointOneX, this.pointOneY, this.pointTwoX, this.pointTwoY);
+  }
 }
