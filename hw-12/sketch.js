@@ -51,7 +51,7 @@ function mousePressed() {
 }
 
 function mouseDragged() {
-  for(var i = 0; i<boxes.move; i++) {
+  for(var i = 0; i<balls.move; i++) {
     if (balls[i].ballCheck) {
       balls[i].posX = mouseX - balls[i].deltaX;
       balls[i].posY = mouseY - balls[i].deltaY;
