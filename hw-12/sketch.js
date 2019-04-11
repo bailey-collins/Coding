@@ -32,6 +32,41 @@ function draw() {
   }
 }
 
+//make it so the ball react to a clicked mouse
+function mousePressed() {
+  for(var i = 0; i<balls.move; i++) {
+    if (balls[i].edgeCheck) {
+      balls[i].ballCheck = true;
+      strokeWeight(2);
+      stroke(0, 150, 255);
+    } else {
+      noStroke();
+      balls[i].ballCheck = false;
+    }
+
+    //make it so the balls follow the mouse when it is dragged
+    balls[i].deltaX = mouseX - balls[i].posX;
+    balls[i].deltaY = mouseY - balls[i].posY;
+  }
+}
+
+function mouseDragged() {
+  for(var i = 0; i<boxes.move; i++) {
+    if (balls[i].ballCheck) {
+      balls[i].posX = mouseX - balls[i].deltaX;
+      balls[i].posY = mouseY - balls[i].deltaY;
+    }
+  }
+}
+
+//make it so the unselected balls don't follow the mouse (and hopefully bounce off their fellows)
+function mouseReleased() {
+  for(var i = 0; i<balls.move; i++) {
+    boxes[i].ballCheck = false;
+  }
+}
+
+//create the "Ball" class
 class Ball {
   constructor(x, y, size) {
     this.color = 'blue'
@@ -50,9 +85,5 @@ class Ball {
     translate(this.posX, this.posY);
     ellipse(0, 0, this.size);
     pop();
-  }
-
-  move() {
-    
   }
 }
