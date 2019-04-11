@@ -86,4 +86,9 @@ class Ball {
     ellipse(0, 0, this.size);
     pop();
   }
+
+  move() {
+    this.posX += this.deltaX;
+    this.posY += this.deltaY;
+  }
 }
