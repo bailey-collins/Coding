@@ -19,6 +19,7 @@ I want to try and keep the different "layers" kind of distinct, so that if I can
 
 I was somewhat inspired from a relatively silly game I really enjoyed in my childhood called Pixie Hollow. This was a Disney game based off of a trilogy of books the company had commissioned from one of my favorite authors about their version of the character Tinker Bell. The trilogy branched out into several shorter books, the game in question, and a few truly awful movies. The game, like most Disney games, consisted of a "chat room" public area that served as a transition point between different minigames. In the public area, wherever you moved your mouse was where you fairy avatar would fly, and randomly appearing items would pop up for the different players to collect. I often had more fun "flying" around the common area and collecting things than I did playing the games. I think a simplified version of that might be right up my alley.
 Here's what the fairies from the game looked like. Mine will be quite a bit simpler:
+
 ![Pixie Hollow random fairy](https://github.com/bailey-collins/Coding/blob/master/hw-13/Images/Capture2.jpg)
 
 
@@ -27,5 +28,7 @@ I'm trying to work on the mouse tracking. I know it was one of the first things 
 
 **Plan**
 1. Build the sprite of the fairy in the different flying positions (already begun, as shown here)
+
 ![Photoshop build of the sprite- custom square brush used to paint the pixels](https://github.com/bailey-collins/Coding/blob/master/hw-13/Images/Capture1.PNG)
+
 2. 
