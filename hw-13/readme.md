@@ -35,7 +35,7 @@ I'm trying to work on the mouse tracking. I know it was one of the first things 
 
 3. Import the background (something like below) using similar methods, or build a "forest" with basic shapes like explained in Weeks 3 and 4
 
-![Forest background I found on Google images that matches best with what I had pictured]()
+![Forest background I found on Google images that matches best with what I had pictured](https://github.com/bailey-collins/Coding/blob/master/hw-13/Images/Capture3.jpg)
 
 4. Use the techniques from Weeks 5 and 6 to make the fairy follow the mouse
 
