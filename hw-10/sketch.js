@@ -1,4 +1,4 @@
-Let stars = [];
+let stars = [];
 
 function setup(){
   createCanvas( windowWidth, 800 );
