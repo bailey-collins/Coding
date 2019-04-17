@@ -31,4 +31,14 @@ I'm trying to work on the mouse tracking. I know it was one of the first things 
 
 ![Photoshop build of the sprite- custom square brush used to paint the pixels](https://github.com/bailey-collins/Coding/blob/master/hw-13/Images/Capture1.PNG)
 
-2. 
+2. Import the sprite into the code using techniques from Week 13
+
+3. Import the background (something like below) using similar methods, or build a "forest" with basic shapes like explained in Weeks 3 and 4
+
+![Forest background I found on Google images that matches best with what I had pictured]()
+
+4. Use the techniques from Weeks 5 and 6 to make the fairy follow the mouse
+
+5. Use else/if statements to make her change direction based on the movement of the mouse (Week 7)
+
+6.
