@@ -41,4 +41,14 @@ I'm trying to work on the mouse tracking. I know it was one of the first things 
 
 5. Use else/if statements to make her change direction based on the movement of the mouse (Week 7)
 
-6.
+6. Use basic shape, push/pop, and array techniques (Week 9) to create a bunch of random ellipses
+
+7. Use else/if techniques, like in the bubble game example from Week , in order to make the ellipses disappear when the fairy flies over/clicks on them to "collect them" (only implement clicking if music is not added)
+
+8. Build extra "dance" positions in photoshop and import them
+
+9. Use the sprite animation techniques from Week 13 to create a dance animation
+
+10. Use if/then statements to make the fairy dance when in a specific corner instead of everywhere
+
+11. 
