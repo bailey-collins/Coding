@@ -37,6 +37,7 @@ function draw() {
       fill(70);
       ellipse(ball.x, ball.y, ball.width, ball.width);
 }
+}
 
 function mousePressed() {
     ball.scale_x = map(mouseX, 0, width, 0.5, 10);
