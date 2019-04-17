@@ -58,4 +58,4 @@ I hope to create one "layer" of working code a day, starting on Monday once I ha
 
 Update: I have finished the basic sprite models and may begin working on the "dance" models.
 
-![Completed Basic Sprite in Photoshop]()
+![Completed Basic Sprite in Photoshop](https://github.com/bailey-collins/Coding/blob/master/hw-13/Images/Capture4.PNG)
