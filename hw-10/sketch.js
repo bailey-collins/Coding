@@ -10,9 +10,7 @@ function setup(){
     //add stars as objects to the array
     stars.push(
       {
-        period: { x: random(60, 240), y: random(60, 240) },
         maxSize: random(4),
-        },
         pos: {
           x: random(width),
           y: random(height)

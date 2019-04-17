@@ -21,12 +21,12 @@ function draw() {
 class Tri {
   constructor(x, y, size, color) {
     this.color = color;
-    this.pointOneX = 3;
-    this.pointOneY = 3;
-    this.pointTwoX = x / 2;
-    this.pointTwoY = y / 2;
-    this.pointThreeX = x / .5;
-    this.pointThreeY = y / .5;
+    this.pointOneX = 10;
+    this.pointOneY = y-10;
+    this.pointTwoX = x+10;
+    this.pointTwoY = y+10;
+    this.pointThreeX = x-10;
+    this.pointThreeY = y+10;
     this.posX = x;
     this.posY = y;
   }

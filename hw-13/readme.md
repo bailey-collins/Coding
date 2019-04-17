@@ -43,7 +43,7 @@ I'm trying to work on the mouse tracking. I know it was one of the first things 
 
 6. Use basic shape, push/pop, and array techniques (Week 9) to create a bunch of random ellipses
 
-7. Use else/if techniques, like in the bubble game example from Week , in order to make the ellipses disappear when the fairy flies over/clicks on them to "collect them" (only implement clicking if music is not added)
+7. Use else/if techniques, like in the bubble game example from Week 12, in order to make the ellipses disappear when the fairy flies over/clicks on them to "collect them" (only implement clicking if music is not added)
 
 8. Build extra "dance" positions in photoshop and import them
 
@@ -51,4 +51,11 @@ I'm trying to work on the mouse tracking. I know it was one of the first things 
 
 10. Use if/then statements to make the fairy dance when in a specific corner instead of everywhere
 
-11. 
+11. Use the most recent lessons from this week to implement music, if time/ability allows
+
+
+I hope to create one "layer" of working code a day, starting on Monday once I have the sprite completely built. I'd like to use any free time I have over the weekend to go back through the lessons and reread them. Hopefully, once I start coding, I will only need about 3 days to complete my "basic" plan and 6 days to have a working version of my "advanced" plan. If things go wrong, however, I will have the full amount of time to complete my basic plan. This will also give me opportunities to come in for help when I can.
+
+Update: I have finished the basic sprite models and may begin working on the "dance" models.
+
+![Completed Basic Sprite in Photoshop]()
