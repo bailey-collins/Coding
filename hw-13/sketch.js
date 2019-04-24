@@ -14,5 +14,5 @@ function setup() {
 function draw() {
   background( 'black' );
 
-  image(img, 10, 10, 50, 50);
+  image(img, 10, 10, 10, 10);
 }
