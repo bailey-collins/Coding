@@ -53,7 +53,12 @@ class Fairy {
     this.sprite_num = 0
     // the top left corner of each subrectangle
     this.subRect = [
-
+      [0, 0],
+      [1250, 0],
+      [0, 1050],
+      [1250, 1050],
+      [0, 2250]
+      [1250, 2250],
     ];
   }
 }
