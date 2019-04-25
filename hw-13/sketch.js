@@ -60,5 +60,48 @@ class Fairy {
       [0, 2250]
       [1250, 2250],
     ];
+
   }
+
+  frame() {
+    this.display();
+    this.animate();
+  }
+
+  display() {
+    push();
+
+    translate(this.pos.x, this.pos.y);
+
+    if (this.orientation === 0) {
+      scale(1,1);
+    } else if (this.orientation === 1) {
+      scale(-1, 1);
+    }
+
+    image(
+      //reference to sprite in memory
+      this.image,
+      //placement of sprite on canvas
+      // (handled by translate())
+      0, 0,
+      // the display size of the sprite
+      this.size.w, this.size.h,
+      // top left corner of the subrectangle
+      this.subRect[this.sprite_num][0], this.subRect[this.sprite_num][1],
+      // size of the subrectangle
+      this.size.w, this.size.h
+    );
+
+    pop();
+  }
+
+  animate() {
+    // update the sprite num to adjust the subrectangle positions
+    if (frameCount % this.speed === 0) {
+      this.sprite_num++;
+      this.sprite_num %= 8;
+    }
+  }
+  
 }
