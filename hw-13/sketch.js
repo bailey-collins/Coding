@@ -24,6 +24,8 @@ function draw() {
   //set background as the forest picture
   background( img );
   imageMode( CENTER );
+  spr.position.x = mouseX;
+  spr.position.y = mouseY;
   image( fairySprite, mouseX, mouseY);
   for (let i = 0; i< cats.length; i++) {
     fairy[1].frame();
