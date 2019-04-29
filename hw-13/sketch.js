@@ -9,7 +9,7 @@ function preload() {
   //code to load background
   img = loadImage('images/forestBackground.jpg');
   //code to load sprite
-  fairy = loadImage("./images/fairySprite.png");
+  fairySprite = loadImage("./images/fairySprite.png");
 }
 
 function setup() {
@@ -24,11 +24,11 @@ function draw() {
   //set background as the forest picture
   background( img );
   noCursor();
-  fairySprite.position.x = mouseX;
-  fairySprite.position.y = mouseY;
-  image( fairySprite, mouseX, mouseY);
-  for (let i = 0; i< cats.length; i++) {
-    fairy[1].frame();
+  fairy[0].pos.x = mouseX;
+  fairy[0].pos.y = mouseY;
+  // image( fairySprite, mouseX, mouseY);
+  for (let i = 0; i< fairy.length; i++) {
+    fairy[i].frame();
   }
 }
 
@@ -49,9 +49,13 @@ class Fairy {
     // the speed at which to work through the subrectangles
     this.speed = 4;
     //the size of the subrectangles as they correspond to sprite size
-    this.size = {
+    this.sub_size = {
       w: 1000,
       h: 1050
+    };
+    this.display_size = {
+      w: 1000/10,
+      h: 1050/10
     };
     // the number of the sprite image displaying
     this.sprite_num = 0
@@ -61,7 +65,7 @@ class Fairy {
       [1250, 0],
       [0, 1050],
       [1250, 1050],
-      [0, 2250]
+      [0, 2250],
       [1250, 2250],
     ];
 
@@ -90,11 +94,11 @@ class Fairy {
       // (handled by translate())
       0, 0,
       // the display size of the sprite
-      this.size.w, this.size.h,
+      this.display_size.w, this.display_size.h,
       // top left corner of the subrectangle
       this.subRect[this.sprite_num][0], this.subRect[this.sprite_num][1],
       // size of the subrectangle
-      this.size.w, this.size.h
+      this.sub_size.w, this.sub_size.h
     );
 
     pop();
@@ -104,7 +108,8 @@ class Fairy {
     // update the sprite num to adjust the subrectangle positions
     if (frameCount % this.speed === 0) {
       this.sprite_num++;
-      this.sprite_num %= 8;
+      this.sprite_num %= 6;
+      // console.log(this.sprite_num);
     }
   }
 
