@@ -1,7 +1,7 @@
 //set up the background as an image
 let img;
 //set up the sprite as an image
-let fairy = [];
+let fairy;
 let fairySprite;
 
 
@@ -16,21 +16,17 @@ function setup() {
   //setup code
   createCanvas( windowWidth, windowHeight );
   background( img );
-  fairy[0] = new Fairy(100, 100, fairySprite, 0);
-  fairy[1] = new Fairy(1000, 1050, fairySprite, 1);
+  fairy = new Fairy(100, 100, fairySprite, 0);
 }
 
 function draw() {
   //set background as the forest picture
   background( img );
   noCursor();
-  // fairy[0].pos.x = mouseX;
-  // fairy[0].pos.y = mouseY;
-  fairy[0].setPosition(mouseX, mouseY);
-  // image( fairySprite, mouseX, mouseY);
-  for (let i = 0; i< fairy.length; i++) {
-    fairy[i].frame();
-  }
+  fairy.setPosition(mouseX, mouseY);
+
+  fairy.frame();
+
 }
 
 /////////////////
