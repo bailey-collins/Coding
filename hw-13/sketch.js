@@ -23,6 +23,8 @@ function setup() {
 function draw() {
   //set background as the forest picture
   background( img );
+  imageMode( CENTER );
+  image( fairySprite, mouseX, mouseY);
   for (let i = 0; i< cats.length; i++) {
     fairy[1].frame();
   }
@@ -103,5 +105,5 @@ class Fairy {
       this.sprite_num %= 8;
     }
   }
-  
+
 }
