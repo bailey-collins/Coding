@@ -24,8 +24,9 @@ function draw() {
   //set background as the forest picture
   background( img );
   noCursor();
-  fairy[0].pos.x = mouseX;
-  fairy[0].pos.y = mouseY;
+  // fairy[0].pos.x = mouseX;
+  // fairy[0].pos.y = mouseY;
+  fairy[0].setPosition(mouseX, mouseY);
   // image( fairySprite, mouseX, mouseY);
   for (let i = 0; i< fairy.length; i++) {
     fairy[i].frame();
@@ -41,13 +42,18 @@ class Fairy {
       x: init_x,
       y: init_y
     };
+    this.prev_pos = {
+      x: init_x,
+      y: init_y
+    };
+
 
     this.orientation = orientation;
 
     //referencing a pre-loaded image in memory
     this.image = img;
     // the speed at which to work through the subrectangles
-    this.speed = 4;
+    this.speed = 20;
     //the size of the subrectangles as they correspond to sprite size
     this.sub_size = {
       w: 1000,
@@ -61,12 +67,12 @@ class Fairy {
     this.sprite_num = 0
     // the top left corner of each subrectangle
     this.subRect = [
-      [0, 0],
-      [1250, 0],
-      [0, 1050],
-      [1250, 1050],
-      [0, 2250],
-      [1250, 2250],
+      [0, 0], // still
+      [1250, 0], // right
+      [0, 1050], // down
+      [1250, 1050], // up
+      [0, 2250], // left
+      [1250, 2250], // still
     ];
 
   }
@@ -106,11 +112,57 @@ class Fairy {
 
   animate() {
     // update the sprite num to adjust the subrectangle positions
-    if (frameCount % this.speed === 0) {
-      this.sprite_num++;
-      this.sprite_num %= 6;
-      // console.log(this.sprite_num);
+    // if (frameCount % this.speed === 0) {
+    //   this.sprite_num++;
+    //   this.sprite_num %= 6;
+    //   // console.log(this.sprite_num);
+    // }
+
+    if(this.dir == 'still'){
+      if( floor(frameCount / this.speed) % 2 == 0 ){
+        this.sprite_num = 0;
+      } else {
+        this.sprite_num = 5;
+      }
+    } else if(this.dir == 'up'){
+      this.sprite_num = 3;
+    } else if(this.dir == 'down'){
+      this.sprite_num = 2;
+    } else if(this.dir == 'left'){
+      this.sprite_num = 4;
+    } else if(this.dir == 'right'){
+      this.sprite_num = 1;
     }
+
+  }
+
+  setPosition(posX, posY){
+    this.prev_pos.x = this.pos.x;
+    this.prev_pos.y = this.pos.y;
+    this.pos.x = posX;
+    this.pos.y = posY;
+
+    let xDelta = this.pos.x - this.prev_pos.x;
+    let yDelta = this.pos.y - this.prev_pos.y;
+
+    if( xDelta == 0 && yDelta == 0){
+      this.dir = 'still';
+    } else if(abs(xDelta) >= abs(yDelta)){
+      if(xDelta < 0){
+        this.dir = 'left';
+      } else {
+        this.dir = 'right';
+      }
+    } else {
+      if(yDelta < 0){
+        this.dir = 'up';
+      } else {
+        this.dir = 'down';
+      }
+    }
+
+    // console.log(this.dir);
+
   }
 
 }
