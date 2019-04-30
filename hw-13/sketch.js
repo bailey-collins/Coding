@@ -3,6 +3,8 @@ let img;
 //set up the sprite as an image
 let fairy;
 let fairySprite;
+//set up bubbles
+let bubbles = [];
 
 function preload() {
   //code to load background
@@ -16,6 +18,8 @@ function setup() {
   createCanvas( windowWidth, windowHeight );
   background( img );
   fairy = new Fairy(100, 100, fairySprite, 0);
+  let b = new Bubble(width/2, height/2, 10);
+  bubbles.push(b);
 }
 
 function draw() {
@@ -25,6 +29,11 @@ function draw() {
   noCursor();
   fairy.setPosition(mouseX, mouseY);
   fairy.frame();
+  //draw bubbles
+  for (let i = 0, i < bubbles.length; i++) {
+    bubbles[i].move();
+    bubbles[i].show();
+  }
 }
 
 /////////////////
