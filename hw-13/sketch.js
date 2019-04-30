@@ -3,10 +3,6 @@ let img;
 //set up the sprite as an image
 let fairy;
 let fairySprite;
-//set up the ellipses for the bubbles
-let d = 50;
-let r = d / 2;
-
 
 function preload() {
   //code to load background
@@ -29,17 +25,6 @@ function draw() {
   noCursor();
   fairy.setPosition(mouseX, mouseY);
   fairy.frame();
-  //draw the bubbles
-  fill('lightblue');
-  noStroke();
-  //create the for loop to draw multiple bubbles
-  for (let i = 0; i < 10; i++) {
-    //find the x positions
-    pos_x = width * i / 10 + r;
-    //draw the ellipse
-    ellipse(pos_x, pos_y, d);
-  }
-
 }
 
 /////////////////
