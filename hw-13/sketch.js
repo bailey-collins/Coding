@@ -4,7 +4,7 @@ let img;
 let fairy;
 let fairySprite;
 //set up bubbles
-let bubbles = [];
+//let bubbles = [];
 
 function preload() {
   //code to load background
@@ -18,8 +18,8 @@ function setup() {
   createCanvas( windowWidth, windowHeight );
   background( img );
   fairy = new Fairy(100, 100, fairySprite, 0);
-  let b = new Bubble(width/2, height/2, 10);
-  bubbles.push(b);
+  //let i = new Bubble(width/2, height/2, 10);
+  //bubbles.push(b);
 }
 
 function draw() {
@@ -30,10 +30,10 @@ function draw() {
   fairy.setPosition(mouseX, mouseY);
   fairy.frame();
   //draw bubbles
-  for (let i = 0, i < bubbles.length; i++) {
-    bubbles[i].move();
-    bubbles[i].show();
-  }
+  //for (let i = 0, e < bubbles.length; i++) {
+  //  bubbles[i].move();
+  //  bubbles[i].show();
+//  }
 }
 
 /////////////////
