@@ -4,5 +4,5 @@ function setup() {
 
 function draw() {
   fill ('white')
-  ellipse( 10, 10, 16, 16 );
+  ellipse( 10, 10, 0, 0 );
 }
