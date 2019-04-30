@@ -1,10 +1,19 @@
-//draw the bubbles
-fill('lightblue');
-noStroke();
-//create the for loop to draw multiple bubbles
-for (let i = 0; i < 10; i++) {
-  //find the x positions
-  pos_x = width * i / 10 + r;
-  //draw the ellipse
-  ellipse(pos_x, pos_y, d);
+class Bubble {
+  constructor(x, y, r) {
+    this.x = x;
+    this.y = y;
+    this.r = r;
+  }
+
+  move() {
+    this.x = this.x + random(-5, 5,);
+    this.y = this.y + random(-5, 5);
+  }
+
+  show() {
+    stroke(255);
+    strokeWeight(4);
+    noFill();
+    ellipse(this.x, this.y, this.r)
+  }
 }
